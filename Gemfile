@@ -7,7 +7,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 # Gems for project
-gem 'rack-cors', '~> 0.4.0'
+gem "rack-cors", ">= 1.0.4"
 gem 'active_model_serializers', '~> 0.10.10'
 
 group :development, :test do
