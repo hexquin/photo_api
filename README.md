@@ -198,5 +198,14 @@ end
 2. POST/PATCH request
 3. Delete request
 
+## VI. Notes
+1. How to create variables environment?
+- In the application, I use a file **local_env.yml** to store **username** and **password** for config DB.
+- Reference link: (https://itnext.io/environment-variables-in-ruby-on-rails-17e4934cfd71)
+- In the **database.yml** : Use **<%= %>** to Ruby can read the value.
+```
+<%= ENV["USERNAME"] %>
+```
+
 
 
