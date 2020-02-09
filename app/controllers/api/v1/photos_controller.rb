@@ -20,6 +20,6 @@ class Api::V1::PhotosController < ApplicationController
       params.require(:photo).permit(:title, :photo_url_string)
     end
     def get_photo
-      @photo = Photo.find(params[:photo_id])
+      @photo = Photo.find(params[:id])
     end
 end
