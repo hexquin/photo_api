@@ -1,7 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+photo1 = Photo.create(title: 'Heart', photo_url_string: 'https://images.unsplash.com/photo-1581022414232-7c2eb612b50f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')
+photo2 = Photo.create(title: 'Baby', photo_url_string: 'https://images.unsplash.com/photo-1581095863507-f121a8693129?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80')
+comment1 = Comment.create(content: 'Awesome picture', owner: 'Unsplash 1', photo_id: photo1.id)
+comment2 = Comment.create(content: 'Hmm, this is romantic picture', owner: 'Unsplash 2', photo_id: photo1.id)
+comment3 = Comment.create(content: 'Haha picture', owner: 'Unsplash 3', photo_id: photo2.id)
+comment4 = Comment.create(content: 'Not bad', owner: 'Unsplash 4', photo_id: photo2.id)
